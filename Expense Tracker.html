@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Expense Tracker.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    
+      </head>
+      <body>
+      <h1 class="heading">Expense Tracker</h1>
+      <div class="wrapper">
+        <div class="container">
+          <div class="form_wrapper">
+            <form>
+              <label for="total-money">Balance</label>
+              <input type="number" id="total_budget" />
+          </form>
+          <form>
+            <div>
+              <label for="product-name">User Name</label>
+              <input type="text" id="product_name" />
+            </div>
+            <div>
+              <label for="product-price">Amount</label>
+              <input type="number" id="product_price" />
+            </div>
+            <div>
+              <label for="numberofproduct">Number of Product</label>
+              <input
+                type="number"
+                id="numberofproduct"
+                min="1"
+                max="100000"
+                value="1"
+                />
+              </div>
+
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date">
+
+              <button type="button" id="add_product">Add Product</button>
+            </form>
+          </div>
+          <div class="product_table_and_result">
+            <table id="product_table">
+              <thead>
+                <tr>
+                
+                  <th>User Name</th>
+                  <th>Amount</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="budget_tacker_info">
+              
+              <div>
+                <span>Expenses</span>
+                <h2 id="total_expenses">0</h2>
+              </div>
+              <div>
+                <span>Remaining</span>
+                <h2 id="remaining_value">0</h2>
+              </div>
+              <div>
+                <span>Total Money</span>
+                <h2 id="total">0</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src ="Expence Tracker.js">
+      
+    </script>
+  </body>
+</html>
